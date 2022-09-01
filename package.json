@@ -1,0 +1,20 @@
+{
+  "name": "hospital",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server":"nodemon index.jx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhavya3113/Hospital.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhavya3113/Hospital/issues"
+  },
+  "homepage": "https://github.com/bhavya3113/Hospital#readme"
+}
