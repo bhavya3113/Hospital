@@ -2,7 +2,15 @@ const mongoose = require("mongoose");
 const schema = mongoose.Schema;
 
 const psychiatristSchema = new schema({
+  email:{
+    type: String,
+    require: true
+  },
   name:{
+    type: String,
+    require: true
+  },
+  password:{
     type: String,
     require: true
   },

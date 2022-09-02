@@ -2,11 +2,11 @@ const express = require("express");
 const mongoose = require("mongoose"); 
 const dotenv = require("dotenv");
 
-const authRoutes = require("./routes/auth");
-const contactRoutes  =require("./routes/contact")
+const psyRoutes = require("./routes/psy");
 
 dotenv.config();
 const app = express();
+
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
@@ -18,8 +18,29 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use('/auth',authRoutes);
-app.use('/contact',contactRoutes);
+
+const multer = require('multer');
+
+const fileStorage = multer.diskStorage({
+  destination:(req,file,cb)=>{
+      cb(null, 'images');
+  },
+  filename: (req,file,cb)=>{
+    cb(null,  file.fieldname + '-' + file.originalname)
+  }
+})
+
+const fileFilter=(req,file,cb)=>{
+  var ext = path.extname(file.originalname);
+    if(ext == '.png' || ext == '.jpg' || ext == '.jpeg')
+       cb(null,true);
+    else {
+      cb(null,false);
+      console.log("wrong file type")}
+
+}
+app.use(multer({storage:fileStorage,fileFilter:fileFilter}).single('image'));
+app.use('/psy',psyRoutes);
 
 
 

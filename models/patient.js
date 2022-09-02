@@ -12,6 +12,7 @@ const pateintSchema = new schema({
   },
   address:{
     type: String,
+    minlength:10,
     require:true
   },
   mobileno:{
@@ -24,7 +25,7 @@ const pateintSchema = new schema({
   },
   imageUrl:{
     type: String,
-    default:  path.join('images','image-noprofile.png')
+    require:true
   }
 })
 
