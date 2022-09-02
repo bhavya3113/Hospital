@@ -1,7 +1,6 @@
 const bcrypt = require("bcryptjs");
 const { validationResult } = require("express-validator");
 const dotenv = require("dotenv");
-const validatePhoneNumber = require('validate-phone-number-node-js');
 const passwordValidator = require('password-validator');
 const jwt = require('jsonwebtoken');
 
@@ -22,7 +21,7 @@ const Hospital = require("../models/hospital");
 const Token = require("../models/token");
 
 var emailregex = /^[-!#$%&'*+\/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](-*\.?[a-zA-Z0-9])*\.[a-zA-Z](-?[a-zA-Z0-9])+$/
-
+var phoneregex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
 
 //first psychiatrist need to login in his existing account that 
 // would have been provided by the hospital he is working in
@@ -59,7 +58,7 @@ exports.login = async (req, res, next) => {
       token: refreshtoken
     })
     await token.save();
-    return res.status(200).json({ message: "LoggedIn", email: email, access_token: accesstoken });
+    return res.status(200).json({ message: "LoggedIn", email: email, access_token: accesstoken,refreshtoken:refreshtoken });
     }
   catch (err) {
     if (!err.statusCode) {
@@ -76,18 +75,23 @@ exports.patientReg = async (req, res, next) => {
     if (!errors.isEmpty()) {
       return res.status(422).json({ Error: "Validation Failed" });
     }
-    
     const psyId = req.psyId;
-    const { name, address, phoneno, email, password } = req.body;
 
-    const image = req.files.image;
+    const { name, address, phoneno, email, password } = req.body;
+    
+    const image = req.file;
+    if(!image)
+    {
+      const error = new Error('Image not found');
+      error.statusCode = 400;
+      throw error;
+    }
     let imageUrl;
     if(image){
-      imageUrl = image[0].path;
-      // console.log(imageUrl);
+      imageUrl = image.path;
     }
     var validemail = emailregex.test(email);
-    var validnumber = validatePhoneNumber.validate(phoneno);
+    var validnumber = phoneregex.test(phoneno);
     var validpswd = schema.validate(password);
 
     if (!validemail) {
@@ -97,7 +101,7 @@ exports.patientReg = async (req, res, next) => {
     }
      if(!validpswd)
      {
-      const error = new Error('Please enter a valid password');
+      const error = new Error('Please enter a valid password. Password must contain 1 uppercase , 1 lowercase and 1 number and length must at least be 8 and maximum 15');
       error.statusCode = 422;
       throw error;
      }
@@ -130,6 +134,7 @@ exports.patientReg = async (req, res, next) => {
   });
   await newpatient.save();
   await psy.patients.push(newpatient);
+  await psy.save();
   return res.status(200).json({ message: "successfully registered"});
 
 }
@@ -204,7 +209,8 @@ exports.generateAccessToken = async (req, res, next) => {
       throw error;
     }
     const payload = jwt.verify(tokenInDb.token, process.env.REFRESH_TOKEN_KEY);
-    const accessToken = jwt.sign({ id: payload._id, email: payload.email }, process.env.ACCESS_TOKEN_KEY, { expiresIn: "1h" });
+  
+    const accessToken = jwt.sign({ psychiatristId: payload.psychiatristId, email: payload.email }, process.env.ACCESS_TOKEN_KEY, { expiresIn: "1h" });
     return res.status(200).json({ access_token: accessToken });
   }
   catch (err) {

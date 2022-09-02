@@ -12,7 +12,6 @@ module.exports = (req, res, next) => {
             try{
                 if(decode)
                 { 
-                  req.email=decode.email;
                   req.psyId = decode.psychiatristId;
                  
                   next();
