@@ -13,7 +13,8 @@ router.post("/patientRegistration",isAuth,psyController.patientReg);
 
 //to get hospital details
 router.get("/fetchdetails",psyController.fetchdetails);
-//
+
+//to generate access token
 router.post("/generateaccesstoken",psyController.generateAccessToken);
 
 module.exports=router; 

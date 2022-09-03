@@ -1,0 +1,307 @@
+[{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa29"
+  },
+  "name": "James",
+  "email": "jbutt@gmail.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa",
+  "__v": 5,
+  "patients": [
+    {
+      "$oid": "63126afb001cb411f267679c"
+    },
+    {
+      "$oid": "63126b6fef24ef4cf06cee0d"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa2a"
+  },
+  "name": "Josephine",
+  "email": "josephine_darakjy@darakjy.org",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa",
+  "__v": 1,
+  "patients": [
+    {
+      "$oid": "63126bc1ef24ef4cf06cee15"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa2b"
+  },
+  "name": "Art",
+  "email": "art@venere.org",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa"
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa2c"
+  },
+  "name": "Lenna",
+  "email": "lpaprocki@hotmail.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa"
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa2d"
+  },
+  "name": "Donette",
+  "email": "donette.foller@cox.net",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa",
+  "__v": 1,
+  "patients": [
+    {
+      "$oid": "63126c00ef24ef4cf06cee1d"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa2e"
+  },
+  "name": "Simona",
+  "email": "simona@morasca.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa"
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa2f"
+  },
+  "name": "Mitsue",
+  "email": "mitsue_tollner@yahoo.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa"
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa30"
+  },
+  "name": "Leota",
+  "email": "leota@hotmail.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa",
+  "__v": 2,
+  "patients": [
+    {
+      "$oid": "63126c64ef24ef4cf06cee27"
+    },
+    {
+      "$oid": "63126c72ef24ef4cf06cee2d"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa31"
+  },
+  "name": "Sage",
+  "email": "sage_wieser@cox.net",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa",
+  "__v": 2,
+  "patients": [
+    {
+      "$oid": "63126ca4ef24ef4cf06cee35"
+    },
+    {
+      "$oid": "63126cb5ef24ef4cf06cee3b"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa32"
+  },
+  "name": "Kris",
+  "email": "kris@gmail.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa",
+  "__v": 1,
+  "patients": [
+    {
+      "$oid": "63126ce4ef24ef4cf06cee43"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa33"
+  },
+  "name": "Minna",
+  "email": "minna_amigon@yahoo.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa",
+  "__v": 2,
+  "patients": [
+    {
+      "$oid": "63126d10ef24ef4cf06cee4b"
+    },
+    {
+      "$oid": "63126d1eef24ef4cf06cee51"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa34"
+  },
+  "name": "Abel",
+  "email": "amaclead@gmail.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa"
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa35"
+  },
+  "name": "Kiley",
+  "email": "kiley.caldarera@aol.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa"
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa36"
+  },
+  "name": "Graciela",
+  "email": "gruta@cox.net",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa"
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa37"
+  },
+  "name": "Cammy",
+  "email": "calbares@gmail.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa"
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa38"
+  },
+  "name": "Mattie",
+  "email": "mattie@aol.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa"
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa39"
+  },
+  "name": "Meaghan",
+  "email": "meaghan@hotmail.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa",
+  "__v": 2,
+  "patients": [
+    {
+      "$oid": "63126dc3ef24ef4cf06cee5d"
+    },
+    {
+      "$oid": "63126e05ef24ef4cf06cee63"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa40"
+  },
+  "name": "Maryann",
+  "email": "mroyster@royster.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa",
+  "__v": 1,
+  "patients": [
+    {
+      "$oid": "63126e5eecf8e0fe57710d37"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa41"
+  },
+  "name": "Alisha",
+  "email": "alisha@slusarski.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa",
+  "__v": 1,
+  "patients": [
+    {
+      "$oid": "63126e84ecf8e0fe57710d3f"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa42"
+  },
+  "name": "Allene",
+  "email": "allene_iturbide@cox.net",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa",
+  "__v": 2,
+  "patients": [
+    {
+      "$oid": "63126eb4ecf8e0fe57710d47"
+    },
+    {
+      "$oid": "63126ebeecf8e0fe57710d4d"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa43"
+  },
+  "name": "Chanel",
+  "email": "chanel.caudy@caudy.org",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa"
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa44"
+  },
+  "name": "Ezekiel",
+  "email": "ezekiel@chui.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa"
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa45"
+  },
+  "name": "Willow",
+  "email": "wkusko@yahoo.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa",
+  "__v": 1,
+  "patients": [
+    {
+      "$oid": "63126f1eecf8e0fe57710d57"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa46"
+  },
+  "name": "Bernardo",
+  "email": "bfigeroa@aol.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa",
+  "__v": 1,
+  "patients": [
+    {
+      "$oid": "63126f52ecf8e0fe57710d5f"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa47"
+  },
+  "name": "Ammie",
+  "email": "ammie@corrio.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa",
+  "__v": 1,
+  "patients": [
+    {
+      "$oid": "63126f7fecf8e0fe57710d67"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa48"
+  },
+  "name": "Francine",
+  "email": "francine_vocelka@vocelka.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa",
+  "__v": 1,
+  "patients": [
+    {
+      "$oid": "6312714aecf8e0fe57710d6f"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63125016f03b616235f9fa49"
+  },
+  "name": "Ernie",
+  "email": "ernie_stenseth@aol.com",
+  "password": "$2a$12$yFoGSx6lYV4eY2DT4hQHdO4jVuSar/x2pFEZbX86hmXxDfmX7LOaa",
+  "__v": 2,
+  "patients": [
+    {
+      "$oid": "63127177ecf8e0fe57710d77"
+    },
+    {
+      "$oid": "63127182ecf8e0fe57710d7d"
+    }
+  ]
+}]
